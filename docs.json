@@ -3,9 +3,23 @@
   "theme": "mint",
   "name": "Web Accessibility",
   "colors": {
-    "primary": "#1A1A1A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#166534",
+    "light": "#22C55E",
+    "dark": "#14532D"
+  },
+  "background": {
+    "colors": {
+      "light": "#FFFFFF",
+      "dark": "#000000"
+    }
+  },
+  "fonts": {
+    "heading": {
+      "family": "DM Sans"
+    },
+    "body": {
+      "family": "DM Sans"
+    }
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -33,47 +47,20 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Support",
+      "href": "mailto:info@clevyre.com"
     }
   },
   "contextual": {
     "options": ["copy", "view", "chatgpt", "claude", "perplexity", "mcp", "cursor", "vscode"]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }
