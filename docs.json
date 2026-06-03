@@ -46,6 +46,41 @@
             ]
           }
         ]
+      },
+      {
+        "product": "EU Withdrawal Button",
+        "description": "Offer a compliant EU right-of-withdrawal process on your Shopify store",
+        "icon": "rotate-left",
+        "groups": [
+          {
+            "group": "Getting started",
+            "icon": "rocket",
+            "pages": [
+              "eu-withdrawal-button/overview",
+              "eu-withdrawal-button/quickstart",
+              "eu-withdrawal-button/customer-experience"
+            ]
+          },
+          {
+            "group": "Managing withdrawals",
+            "icon": "table-list",
+            "pages": [
+              "eu-withdrawal-button/managing/dashboard",
+              "eu-withdrawal-button/managing/withdrawals-list",
+              "eu-withdrawal-button/managing/withdrawal-detail"
+            ]
+          },
+          {
+            "group": "Settings",
+            "icon": "sliders",
+            "pages": [
+              "eu-withdrawal-button/settings/overview",
+              "eu-withdrawal-button/settings/button-appearance",
+              "eu-withdrawal-button/settings/withdrawal-window",
+              "eu-withdrawal-button/settings/emails-and-notifications"
+            ]
+          }
+        ]
       }
     ]
   },

@@ -1,0 +1,115 @@
+---
+title: "Processing a withdrawal"
+description: "Review a request, understand its statuses, and track your progress"
+icon: "file-lines"
+---
+
+## Overview
+
+Open any request (from the dashboard or the [withdrawals list](/eu-withdrawal-button/managing/withdrawals-list))
+to see its full details. This is where you review what the customer asked for, track where you are
+with it, and — if needed — resend the confirmation email.
+
+## What's on the detail page
+
+The page is organized into clear sections:
+
+<AccordionGroup>
+  <Accordion title="Order" icon="receipt">
+    The order number (a link to the order in Shopify), the total amount, and the currency.
+  </Accordion>
+  <Accordion title="Customer" icon="user">
+    The customer's name (a link to their Shopify profile), email, language, and country. If the
+    customer's data has been removed for GDPR reasons, that's noted here.
+  </Accordion>
+  <Accordion title="Items withdrawn" icon="boxes-stacked">
+    A table of the products being withdrawn — image, title, options, the quantity withdrawn versus the
+    quantity ordered, and the line price.
+  </Accordion>
+  <Accordion title="Reason" icon="comment">
+    The reason the customer gave, if they chose to provide one.
+  </Accordion>
+  <Accordion title="Event timeline" icon="clock-rotate-left">
+    A complete, time-stamped log of everything that happened — declaration submitted, confirmation
+    submitted, emails sent or failed, status changes, and more. This is your audit trail.
+  </Accordion>
+</AccordionGroup>
+
+At the top of the page you'll also find a **Resend confirmation email** button, useful if the
+original email didn't reach the customer.
+
+## Understanding the two statuses
+
+Each withdrawal has **two** kinds of status. It's important to understand the difference.
+
+<Columns cols={2}>
+  <Card title="Compliance status" icon="shield-check">
+    Set **automatically** by the app. It reflects where the customer is in the legal withdrawal
+    process — you don't change this yourself.
+  </Card>
+  <Card title="Processing status" icon="person-running">
+    Set **by you**. It tracks your own internal handling of the request — separate from the legal
+    process.
+  </Card>
+</Columns>
+
+### Compliance status
+
+This is the app's automatic record of the request's progress:
+
+| Status | Meaning |
+| --- | --- |
+| **Declared** | The customer started the request but hasn't confirmed yet. |
+| **Confirmed** | The customer confirmed the withdrawal. |
+| **Confirmation sent** | The confirmation email was delivered successfully — the legally binding record. |
+| **Confirmation email failed** | The email couldn't be delivered. Use **Resend confirmation email** to try again. |
+| **Abandoned** | The request was started but never completed. |
+| **Redacted (GDPR)** | The customer's personal data was removed following a GDPR request. |
+
+### Processing status
+
+This is your own tracking of where you are with the request. Choose a status from the dropdown and
+click **Save status**:
+
+| Status | Use it when… |
+| --- | --- |
+| **In progress** | You're reviewing or handling the request (this is the default). |
+| **Completed** | You've finished — for example, you've issued the refund. |
+| **Rejected** | You've declined the request, e.g. it turned out to be out of scope. |
+
+<Tip>
+The **Pending** and **Completed** counts on the home dashboard are based on the processing status —
+so keeping these up to date keeps your dashboard accurate.
+</Tip>
+
+## A typical processing flow
+
+<Steps>
+  <Step title="Open the request">
+    Click into the withdrawal from the dashboard or list.
+  </Step>
+  <Step title="Review the details">
+    Check the items, quantities, value, and reason. Confirm the compliance status shows
+    *Confirmation sent*.
+  </Step>
+  <Step title="Issue any refund in Shopify">
+    Use the linked order to process a refund through Shopify as you normally would.
+  </Step>
+  <Step title="Update the processing status">
+    Set the status to **Completed** (or **Rejected** if you're declining) and click **Save status**.
+  </Step>
+</Steps>
+
+## A note on records
+
+Confirmation emails and the event timeline together form your proof that withdrawals were handled
+correctly. Keep these records in case you ever need to demonstrate compliance.
+
+<Card
+  title="Set up email notifications"
+  icon="envelope"
+  href="/eu-withdrawal-button/settings/emails-and-notifications"
+  horizontal
+>
+  Control who gets alerted and how confirmation emails are sent.
+</Card>

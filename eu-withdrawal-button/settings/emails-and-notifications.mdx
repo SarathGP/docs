@@ -1,0 +1,60 @@
+---
+title: "Emails & notifications"
+description: "Control confirmation emails and where withdrawal alerts go"
+icon: "envelope"
+---
+
+## Overview
+
+The app sends two kinds of email automatically: a **confirmation email** to the customer, and a
+**notification email** to you. The **Email sender** and **Notifications** sections of Settings let you
+control how these appear and where they're delivered.
+
+## Who gets which email
+
+<Columns cols={2}>
+  <Card title="Confirmation email (to customer)" icon="envelope-circle-check">
+    Sent when a customer confirms a withdrawal. It contains their declaration, the items, a reference
+    number, and the timestamp. This email is the **durable legal record** of the withdrawal.
+  </Card>
+  <Card title="Notification email (to you)" icon="bell">
+    Sent at the same time so you know a new withdrawal has arrived and can start processing it.
+  </Card>
+</Columns>
+
+## Email sender settings
+
+These control how the confirmation email appears to your customers:
+
+<AccordionGroup>
+  <Accordion title="Sender name" icon="signature">
+    The name customers see as the sender. Defaults to your shop's name. Up to 255 characters.
+  </Accordion>
+  <Accordion title="Reply-to email" icon="reply">
+    The address that receives replies if a customer responds to the confirmation email. Defaults to
+    the shop owner's email.
+  </Accordion>
+</AccordionGroup>
+
+## Notification settings
+
+<AccordionGroup>
+  <Accordion title="Notification email" icon="at">
+    The address where withdrawal alerts are sent. We recommend setting this to whoever handles
+    customer service or refunds. If you leave it blank, alerts fall back to your **reply-to email**.
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+Send notifications to a shared inbox (like `support@yourstore.com`) so withdrawals aren't missed if
+one person is away.
+</Tip>
+
+## If a confirmation email fails
+
+Occasionally an email can't be delivered (for example, a mistyped address). When this happens:
+
+- The customer still sees their on-screen receipt and can **print or save** it.
+- The withdrawal's [compliance status](/eu-withdrawal-button/managing/withdrawal-detail#compliance-status)
+  shows **Confirmation email failed**.
+- You can open the request and click **Resend confirmation email** to try again.

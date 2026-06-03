@@ -1,0 +1,114 @@
+---
+title: "The customer experience"
+description: "What your shoppers see and do when they withdraw from an order"
+icon: "user"
+---
+
+## Overview
+
+This page walks through exactly what a customer experiences when they cancel an order. Understanding
+this flow helps you support customers and answer their questions with confidence.
+
+The whole process is a short, guided form. The customer never needs an account or any technical
+knowledge — just their order number and email address.
+
+## Where the button appears
+
+A floating pill-shaped button sits in the corner of your storefront on every page. By default it says
+**"Withdraw from contract"** and sits in the bottom-right corner. You can change its text, colour,
+size, and position in [Settings](/eu-withdrawal-button/settings/button-appearance).
+
+When a customer clicks it, they're taken to the withdrawal page (at a web address like
+`yourstore.com/apps/withdrawal`).
+
+## The withdrawal steps
+
+<Steps>
+  <Step title="Find the order">
+    The customer enters their **order number** and **email address**. The app finds the matching
+    order and checks that it's still eligible for withdrawal.
+
+    If they can't find their order number, they can choose **"Submit a manual withdrawal
+    declaration"** instead (see below).
+  </Step>
+  <Step title="Choose items and add a reason">
+    The customer sees every item in their order with its image, options, quantity, and price. They
+    select how many of each item they want to withdraw — they can cancel the whole order or just part
+    of it.
+
+    They can also confirm their name and add an optional reason. (By law a reason is never required.)
+    Any items that are exempt from withdrawal are clearly marked and can't be selected.
+  </Step>
+  <Step title="Review and confirm">
+    The customer sees a summary of what they're withdrawing and the total value, along with the
+    legally required statement based on the EU model withdrawal form:
+
+    > *"I hereby give notice that I withdraw from my contract of sale of the following goods…"*
+
+    They click **Confirm withdrawal** to submit.
+  </Step>
+  <Step title="Get the receipt and email">
+    The customer sees a **"Withdrawal confirmed"** page with their **reference number**
+    (e.g. `WD-2026-0001`), the date, the items, and the value. They can **print or save** this page.
+
+    A confirmation email is also sent to their address — this email is the durable legal record of the
+    withdrawal.
+  </Step>
+</Steps>
+
+## What gets checked automatically
+
+Before a customer can withdraw, the app quietly confirms a few things so you don't have to:
+
+<AccordionGroup>
+  <Accordion title="The order exists and matches the email" icon="magnifying-glass">
+    The order number and email must match a real order in your store. This prevents someone
+    withdrawing an order that isn't theirs.
+  </Accordion>
+  <Accordion title="The order is still within the withdrawal window" icon="calendar-days">
+    The cooling-off period (14 days by default) is measured from delivery. If Shopify doesn't have an
+    exact delivery date, the app estimates it from the ship date plus your delivery estimate. If the
+    window has passed, the customer is told the period has ended.
+  </Accordion>
+  <Accordion title="The order is in scope" icon="filter">
+    Certain orders are exempt under EU law — for example business-to-business (B2B) orders,
+    subscriptions, and some digital goods delivered instantly. These are skipped automatically.
+  </Accordion>
+  <Accordion title="There's no existing request" icon="ban">
+    If a withdrawal has already been submitted for the order, the customer can't submit a duplicate.
+  </Accordion>
+</AccordionGroup>
+
+## The manual declaration fallback
+
+Sometimes a customer can't find their order number, or the order isn't in your store's system. For
+these cases there's a **manual declaration** option.
+
+The customer fills in an order reference (any identifier they have), their email and name, and a short
+description of the goods or service. This creates a withdrawal record that isn't linked to a specific
+Shopify order, so you can still review and respond to it.
+
+<Note>
+Manual declarations skip the automatic order checks because there's no matching order to check
+against. Review these requests carefully in your admin.
+</Note>
+
+## After the customer confirms
+
+As soon as the customer confirms:
+
+- They receive the **confirmation email** with their declaration and reference number.
+- **You receive a notification email** so you know a withdrawal has come in.
+- A new entry appears in your [Withdrawals list](/eu-withdrawal-button/managing/withdrawals-list)
+  ready for you to process.
+
+## Next steps
+
+<Card
+  title="Manage incoming withdrawals"
+  icon="table-list"
+  href="/eu-withdrawal-button/managing/dashboard"
+  horizontal
+>
+  See how requests appear in your admin and how to process them.
+</Card>

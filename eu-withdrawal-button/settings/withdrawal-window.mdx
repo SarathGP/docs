@@ -1,0 +1,52 @@
+---
+title: "Withdrawal window"
+description: "Set the cooling-off period and how it's calculated"
+icon: "calendar-days"
+---
+
+## Overview
+
+The **Withdrawal window** section controls how long a customer has to cancel their order. The defaults
+follow EU law, so most stores never need to change these.
+
+## Options
+
+<AccordionGroup>
+  <Accordion title="Withdrawal period (days)" icon="hourglass-half">
+    The length of the cooling-off period — how many days after delivery a customer can still withdraw.
+    The default is **14 days**, which is the EU legal minimum. You can set any value between **7 and
+    60 days**.
+
+    <Warning>
+    EU law requires a minimum of 14 days. Lowering this below 14 may put your store out of compliance.
+    Increasing it (offering a longer window) is always allowed.
+    </Warning>
+  </Accordion>
+  <Accordion title="Estimated delivery (days)" icon="truck">
+    A fallback used only when Shopify doesn't have an exact delivery date for an order. The app adds
+    this number of days to the ship date to estimate when delivery happened, then counts the
+    withdrawal period from there. The default is **5 days**, and you can set **1 to 60 days**.
+  </Accordion>
+</AccordionGroup>
+
+## How the window is calculated
+
+The cooling-off period is always measured from **delivery**, not from the order date:
+
+<Steps>
+  <Step title="If Shopify knows the delivery date">
+    The withdrawal period is counted from that exact delivery date.
+  </Step>
+  <Step title="If the delivery date is unknown">
+    The app estimates delivery as the **ship date + your estimated delivery days**, then counts the
+    withdrawal period from that estimate.
+  </Step>
+</Steps>
+
+If a customer tries to withdraw after the window has closed, they're told the period has ended and
+can't complete the request.
+
+<Tip>
+Set the estimated delivery to roughly match how long shipping usually takes for your store. A
+realistic estimate keeps the calculated window fair for orders without a delivery date.
+</Tip>
