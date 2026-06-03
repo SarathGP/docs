@@ -1,0 +1,7 @@
+/* Reduce the navbar logo size.
+   Mintlify renders the logo as <img class="nav-logo w-auto h-7 ...">, sizing it
+   by height (h-7 = 1.75rem) with width:auto, so the SVG width attribute is ignored.
+   Override the height here to shrink it while preserving aspect ratio. */
+.nav-logo {
+  height: 1.25rem !important;
+}
