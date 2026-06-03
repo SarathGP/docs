@@ -23,10 +23,9 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "products": [
+    "tabs": [
       {
-        "product": "Accessibility Widget",
-        "description": "Add accessibility features to your Shopify storefront",
+        "tab": "Accessibility Widget",
         "icon": "wheelchair",
         "groups": [
           {
@@ -48,8 +47,7 @@
         ]
       },
       {
-        "product": "EU Withdrawal Button",
-        "description": "Offer a compliant EU right-of-withdrawal process on your Shopify store",
+        "tab": "EU Withdrawal Button",
         "icon": "rotate-left",
         "groups": [
           {
